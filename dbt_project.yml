@@ -25,7 +25,9 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  Input_Table: "SALES_DATA"
+  Input_Table: ""
+  Project_Name: ""
+  Suite_Name: ""
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -36,5 +38,7 @@ vars:
 models:
   ADQT_DEMO:
     # Applies to all files under models/example/
-    Initialze:
+    Validate:
       materialized: view
+    Aggregate:
+      materialized: table

@@ -1,8 +1,7 @@
 {{
   config
   ( 
-    tags=["SALE"],
-    pre_hook = "CALL ADQT_METADATA.PUBLIC.GX_VALIDATE_WITH_CHECKPOINT_TABLE('{{ var('Input_Table') }}','Sales Demo','Sales Demo Suite');" 
+    pre_hook = "CALL ADQT_METADATA.PUBLIC.GX_VALIDATE_WITH_CHECKPOINT_TABLE('{{ var('Input_Table') }}','{{ var('Project_Name') }}','{{ var('Suite_Name') }}');" 
   )
 }}
 
