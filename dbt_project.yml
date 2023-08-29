@@ -36,5 +36,7 @@ vars:
 models:
   ADQT_DEMO:
     # Applies to all files under models/example/
-    Initialze:
+    Validate:
       materialized: view
+    Aggregate:
+      materialized: table
